@@ -1,0 +1,14 @@
+E:\WPF_MVVM\WpfControlLibrary1\dataGrid_test\obj\Debug\MainWindow.baml
+E:\WPF_MVVM\WpfControlLibrary1\dataGrid_test\obj\Debug\MainWindow.g.cs
+E:\WPF_MVVM\WpfControlLibrary1\dataGrid_test\obj\Debug\App.g.cs
+E:\WPF_MVVM\WpfControlLibrary1\dataGrid_test\obj\Debug\dataGrid_test_MarkupCompile.cache
+E:\WPF_MVVM\WpfControlLibrary1\dataGrid_test\obj\Debug\dataGrid_test.g.resources
+E:\WPF_MVVM\WpfControlLibrary1\dataGrid_test\obj\Debug\dataGrid_test.Properties.Resources.resources
+E:\WPF_MVVM\WpfControlLibrary1\dataGrid_test\obj\Debug\dataGrid_test.csproj.GenerateResource.Cache
+E:\WPF_MVVM\WpfControlLibrary1\dataGrid_test\bin\Debug\dataGrid_test.exe.config
+E:\WPF_MVVM\WpfControlLibrary1\dataGrid_test\bin\Debug\dataGrid_test.exe
+E:\WPF_MVVM\WpfControlLibrary1\dataGrid_test\bin\Debug\dataGrid_test.pdb
+E:\WPF_MVVM\WpfControlLibrary1\dataGrid_test\obj\Debug\dataGrid_test.exe
+E:\WPF_MVVM\WpfControlLibrary1\dataGrid_test\obj\Debug\dataGrid_test.pdb
+E:\WPF_MVVM\WpfControlLibrary1\dataGrid_test\obj\Debug\dataGrid_test.csprojResolveAssemblyReference.cache
+E:\WPF_MVVM\WpfControlLibrary1\dataGrid_test\obj\Debug\dataGrid_test_MarkupCompile.lref

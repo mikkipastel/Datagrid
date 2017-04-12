@@ -1,0 +1,52 @@
+﻿<Window x:Class="dataGrid_test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:dataGrid_test"
+        Title="Datagrid Window" Height="350" Width="525">
+    <Window.Resources>
+        <!-- DataGrid Background -->
+        <LinearGradientBrush x:Key="BlueLightGradientBrush" StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Offset="0" Color="#FFEAF3FF"/>
+            <GradientStop Offset="0.654" Color="#FFC0DEFF"/>
+            <GradientStop Offset="1" Color="#FFC0D9FB"/>
+        </LinearGradientBrush>
+
+        <!-- DatGrid style -->
+        <Style TargetType="{x:Type DataGrid}">
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Background" Value="{StaticResource BlueLightGradientBrush}" />
+            <Setter Property="BorderBrush" Value="#FFA6CCF2" />
+            <Setter Property="RowBackground" Value="White" />
+            <Setter Property="AlternatingRowBackground" Value="#FDFFD0" />
+            <Setter Property="HorizontalGridLinesBrush" Value="Transparent" />
+            <Setter Property="VerticalGridLinesBrush" Value="#FFD3D0" />
+            <Setter Property="RowHeaderWidth" Value="0" />
+        </Style>
+
+        <!-- Enable rows as drop targets -->
+        <!--<Style TargetType="{x:Type DataGridRow}">
+            <Setter Property="AllowDrop" Value="True" />
+        </Style>-->
+    </Window.Resources>
+    <!-- header menu bar -->
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top" Margin="5,1,5,1">
+            <Button Content="Play" Margin="0,0,2,0" Command="{Binding ShowAllData}" />
+            <Button Content="Add" Margin="0,0,2,0" Command="{Binding AddIdName}" />
+            <Button Content="Delete" Margin="0,0,2,0" Command="{Binding RemoveIdName}" />
+            <Label Content="ID : " />
+            <TextBox x:Name="get_id" Width="30" Text="{Binding getID}" />
+            <Label Content="Name : " />
+            <TextBox x:Name="get_name" Width="100" HorizontalAlignment="Left" Text="{Binding getName}" />
+        </DockPanel>
+        <!-- datagrid for id and name -->
+        <DataGrid x:Name="header_grid" DockPanel.Dock="Top" CanUserAddRows="True" CanUserDeleteRows="True" AutoGenerateColumns="False" 
+                  ItemsSource="{Binding TraceData}" SelectedItem="{Binding SelectedItem, Mode=TwoWay}" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="50" Binding="{Binding setID}" IsReadOnly="True" />
+                <DataGridTextColumn Header="Name" Width="120" Binding="{Binding setName}" IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+    
+</Window>
